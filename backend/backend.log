@@ -1,0 +1,960 @@
+INFO:     Will watch for changes in these directories: ['C:\\Users\\noshi\\Desktop\\Project Tracking\\backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [24452] using StatReload
+INFO:     Started server process [28912]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2026-09-09 18:24:30,353 - project_tracking - INFO - File saved: MOLA_FAKO_43ef68377e2a.pdf -> MOLA_FAKO_43ef68377e2a_64fe9ebb5533.pdf
+2026-09-09 18:24:30,354 - project_tracking - INFO - Starting PDF extraction: storage\uploads\MOLA_FAKO_43ef68377e2a_64fe9ebb5533.pdf
+2026-09-09 18:24:32,400 - project_tracking - INFO - Extraction complete: 133 items found
+INFO:     127.0.0.1:61352 - "POST /api/v1/estimates/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61452 - "OPTIONS /api/v1/estimates/upload HTTP/1.1" 200 OK
+2026-09-09 18:27:18,661 - project_tracking - INFO - File saved: MOLA FAKO GENERAL ESTIMATE (1).pdf -> MOLA_FAKO_GENERAL_ESTIMATE_1_42887931239a.pdf
+2026-09-09 18:27:18,661 - project_tracking - INFO - Starting PDF extraction: storage\uploads\MOLA_FAKO_GENERAL_ESTIMATE_1_42887931239a.pdf
+2026-09-09 18:27:23,332 - project_tracking - INFO - Extraction complete: 133 items found
+INFO:     127.0.0.1:57238 - "POST /api/v1/estimates/upload HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57241 - "GET /api/v1/estimates/d8e3a7b7-24ca-4428-a490-725b3d104a8a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57241 - "GET /api/v1/estimates/d8e3a7b7-24ca-4428-a490-725b3d104a8a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59728 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59729 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59729 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59806 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59806 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59807 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59807 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59842 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59842 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59843 - "POST /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f/confirm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59879 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59879 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59880 - "GET /api/v1/estimates/d8e3a7b7-24ca-4428-a490-725b3d104a8a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59880 - "GET /api/v1/estimates/d8e3a7b7-24ca-4428-a490-725b3d104a8a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59880 - "POST /api/v1/estimates/d8e3a7b7-24ca-4428-a490-725b3d104a8a/confirm HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59918 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59918 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59918 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59918 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59489 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59489 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59490 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59490 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59490 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59490 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59569 - "OPTIONS /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f/items/9725fc1d-b217-4998-99ee-e3364128b444 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59569 - "PUT /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f/items/9725fc1d-b217-4998-99ee-e3364128b444 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59569 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59569 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59569 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52352 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52352 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50072 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50072 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50072 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50072 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50073 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50073 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56883 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56883 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\models\models.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28912]
+INFO:     Started server process [30664]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\storage_service.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30664]
+INFO:     Started server process [28044]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\fund_service.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28044]
+INFO:     Started server process [26112]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:58577 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+2026-09-09 20:54:13,702 - project_tracking - INFO - Fund receipt created: 97a6213a-01de-4533-b4b6-192ed2507003 amount=1000000.00
+INFO:     127.0.0.1:58828 - "POST /api/v1/funds HTTP/1.1" 201 Created
+2026-09-09 20:55:06,322 - project_tracking - INFO - Allocation created: 7411b080-6a57-4c67-a286-5985e5f4698b amount=700000.00
+INFO:     127.0.0.1:51418 - "POST /api/v1/funds/97a6213a-01de-4533-b4b6-192ed2507003/allocations HTTP/1.1" 201 Created
+INFO:     127.0.0.1:51422 - "POST /api/v1/funds/97a6213a-01de-4533-b4b6-192ed2507003/allocations HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:51507 - "GET /api/v1/funds/97a6213a-01de-4533-b4b6-192ed2507003 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51665 - "GET /api/v1/funds/97a6213a-01de-4533-b4b6-192ed2507003 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51669 - "GET /api/v1/funds/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57563 - "GET /openapi.json HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\api\v1\funds.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26112]
+INFO:     Started server process [29028]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\api\v1\allocations.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29028]
+INFO:     Started server process [28208]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests\test_funds.py'. Reloading...
+ INFO:     127.0.0.1:61012 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28208]
+INFO:     Started server process [11772]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+2026-09-09 21:22:59,601 - project_tracking - INFO - Fund receipt created: 4e662536-77ee-4d8d-adef-621a0acf8916 amount=1000000.00
+INFO:     127.0.0.1:52279 - "POST /api/v1/funds HTTP/1.1" 201 Created
+2026-09-09 21:23:00,630 - project_tracking - INFO - Allocation created: 4ffb8016-aa93-43e6-8d38-45634ee5a330 amount=700000.00
+INFO:     127.0.0.1:52287 - "POST /api/v1/funds/4e662536-77ee-4d8d-adef-621a0acf8916/allocations HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52291 - "POST /api/v1/allocations/4ffb8016-aa93-43e6-8d38-45634ee5a330/cancel HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:52297 - "GET /api/v1/funds/4e662536-77ee-4d8d-adef-621a0acf8916 HTTP/1.1" 200 OK
+2026-09-09 21:23:33,050 - project_tracking - INFO - Allocation cancelled: 4ffb8016-aa93-43e6-8d38-45634ee5a330
+INFO:     127.0.0.1:52487 - "POST /api/v1/allocations/4ffb8016-aa93-43e6-8d38-45634ee5a330/cancel HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52492 - "GET /api/v1/funds/4e662536-77ee-4d8d-adef-621a0acf8916 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52572 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52580 - "GET /api/v1/estimates?skip=0&limit=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61853 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61853 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61856 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61856 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54585 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54585 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54586 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54586 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54598 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54598 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54598 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54598 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51453 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51453 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51453 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51453 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56423 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56423 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56424 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56424 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55557 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55557 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55558 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55558 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55558 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55558 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55600 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55600 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55600 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55600 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55600 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55600 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62514 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62514 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62515 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62515 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62567 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62567 - "GET /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62568 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62568 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61577 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61577 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61580 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61580 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61750 - "GET /api/v1/estimates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61752 - "GET /api/v1/funds/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61761 - "GET /api/v1/estimates/d8e3a7b7-24ca-4428-a490-725b3d104a8a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61858 - "GET /api/v1/estimates/d8e3a7b7-24ca-4428-a490-725b3d104a8a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56220 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56220 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56223 - "OPTIONS /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56223 - "DELETE /api/v1/estimates/e511bb0d-a7f8-4801-8c4e-891dcbffb86f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56223 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56223 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\schemas\schemas.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [11772]
+INFO:     Started server process [28264]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests\test_fund_receipt_validation.py'. Reloading...
+ INFO:     Shutting down
+INFO:     127.0.0.1:64010 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28264]
+INFO:     Started server process [2280]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:64042 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64102 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64111 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+2026-09-09 22:20:03,994 - project_tracking - INFO - Fund receipt created: d31d2b76-57c3-44a4-9414-64969e55c2e8 amount=2500000.00
+INFO:     127.0.0.1:64570 - "POST /api/v1/funds HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64576 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64580 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64586 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64592 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64598 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64606 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64612 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64616 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64622 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64628 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64634 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64646 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64651 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64657 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64663 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64672 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:64678 - "POST /api/v1/funds HTTP/1.1" 422 Unprocessable Entity
+2026-09-09 22:20:41,202 - project_tracking - INFO - Fund receipt created: b89daff9-ad73-4a5e-a936-d30d604988fc amount=2500000.00
+INFO:     127.0.0.1:64684 - "POST /api/v1/funds HTTP/1.1" 201 Created
+2026-09-09 22:20:43,271 - project_tracking - INFO - Fund receipt created: 3b199416-0dfe-4f75-82f7-4d9642068c0c amount=2500000.00
+INFO:     127.0.0.1:64688 - "POST /api/v1/funds HTTP/1.1" 201 Created
+2026-09-09 22:20:45,352 - project_tracking - INFO - Fund receipt created: d92f3861-c4b2-449c-9833-8cb7f8b89ff4 amount=2500000.00
+INFO:     127.0.0.1:64696 - "POST /api/v1/funds HTTP/1.1" 201 Created
+2026-09-09 22:20:47,439 - project_tracking - INFO - Fund receipt created: 724eac24-c23d-4897-88cc-129d59253b5b amount=2500000.00
+INFO:     127.0.0.1:64702 - "POST /api/v1/funds HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63323 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63323 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\models\models.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2280]
+INFO:     Started server process [20276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\models\models.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [20276]
+INFO:     Started server process [4276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52899 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/estimates?limit=200 HTTP/1.1" 200 OK
+2026-09-09 22:47:16,699 - project_tracking - INFO - Fund receipt created: 366104ec-9506-42be-8111-678e0f00669a amount=1000000.00
+INFO:     127.0.0.1:53240 - "POST /api/v1/funds HTTP/1.1" 201 Created
+2026-09-09 22:47:16,741 - project_tracking - INFO - Allocation created: 7bf17b51-9e09-4a40-b99c-344033019d51 amount=500000.00
+INFO:     127.0.0.1:53240 - "POST /api/v1/funds/366104ec-9506-42be-8111-678e0f00669a/allocations HTTP/1.1" 201 Created
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 201 Created
+INFO:     127.0.0.1:53240 - "GET /api/v1/expenses/0a0dd30a-ce00-47d1-b7d5-c33022b15e65 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 201 Created
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses HTTP/1.1" 201 Created
+2026-09-09 22:47:16,968 - project_tracking - INFO - Bytes saved: smoke.pdf -> smoke_cf56b5119355.pdf
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses/0a0dd30a-ce00-47d1-b7d5-c33022b15e65/evidence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/expenses/0a0dd30a-ce00-47d1-b7d5-c33022b15e65/evidence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "DELETE /api/v1/expenses/0a0dd30a-ce00-47d1-b7d5-c33022b15e65/evidence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "POST /api/v1/expenses/c3110f68-e7c2-42ef-849a-d3b8e7acbb34/reverse HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "PATCH /api/v1/expenses/0a0dd30a-ce00-47d1-b7d5-c33022b15e65 HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "PATCH /api/v1/expenses/0a0dd30a-ce00-47d1-b7d5-c33022b15e65 HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:53240 - "PATCH /api/v1/expenses/0a0dd30a-ce00-47d1-b7d5-c33022b15e65 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "PATCH /api/v1/expenses/0a0dd30a-ce00-47d1-b7d5-c33022b15e65 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/expenses/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53240 - "GET /api/v1/expenses/00000000-0000-0000-0000-000000000000 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:55695 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55695 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55696 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55696 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55696 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55696 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55710 - "GET /api/v1/estimates/d8e3a7b7-24ca-4428-a490-725b3d104a8a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/funds HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51321 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51322 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54902 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54901 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54902 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54901 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61199 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61199 - "GET /api/v1/funds HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\models\models.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [4276]
+INFO:     Started server process [16412]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests\test_resources.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [16412]
+INFO:     Started server process [23972]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:64794 - "GET /api/v1/estimates?limit=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64947 - "POST /api/v1/resources HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64947 - "POST /api/v1/resources/02ed6455-d60a-4173-bd0b-a2ed727e401f/purchases HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64947 - "POST /api/v1/resources/02ed6455-d60a-4173-bd0b-a2ed727e401f/deliveries HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64947 - "POST /api/v1/resources/02ed6455-d60a-4173-bd0b-a2ed727e401f/usage HTTP/1.1" 201 Created
+INFO:     127.0.0.1:64947 - "GET /api/v1/resources/02ed6455-d60a-4173-bd0b-a2ed727e401f HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59962 - "POST /api/v1/resources HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59962 - "POST /api/v1/resources/f9d3d1f2-95a9-4717-9910-3f04e9f89a57/purchases HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59962 - "POST /api/v1/resources/f9d3d1f2-95a9-4717-9910-3f04e9f89a57/deliveries HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59962 - "POST /api/v1/resources/f9d3d1f2-95a9-4717-9910-3f04e9f89a57/usage HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59962 - "GET /api/v1/resources/f9d3d1f2-95a9-4717-9910-3f04e9f89a57 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59962 - "POST /api/v1/resources/f9d3d1f2-95a9-4717-9910-3f04e9f89a57/usage HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:59962 - "POST /api/v1/resources/f9d3d1f2-95a9-4717-9910-3f04e9f89a57/adjustments HTTP/1.1" 201 Created
+INFO:     127.0.0.1:59962 - "GET /api/v1/resources/f9d3d1f2-95a9-4717-9910-3f04e9f89a57 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60142 - "POST /api/v1/resources HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60142 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/purchases HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60142 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/deliveries HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60142 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/usage HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60142 - "GET /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60142 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/usage HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:60142 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/adjustments HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60142 - "GET /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60149 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/movements/40dc5ca2-4062-4ae7-b85e-f6b93e3c4a2b/evidence HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:60255 - "GET /api/v1/resources?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60255 - "GET /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60259 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/movements/40dc5ca2-4062-4ae7-b85e-f6b93e3c4a2b/evidence HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:60352 - "GET /api/v1/resources?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60352 - "GET /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e HTTP/1.1" 200 OK
+2026-09-09 23:28:51,256 - project_tracking - INFO - Bytes saved: smoke_evidence.png -> smoke_evidence_93c89a4ef761.png
+INFO:     127.0.0.1:60354 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/movements/40dc5ca2-4062-4ae7-b85e-f6b93e3c4a2b/evidence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60356 - "GET /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/movements/40dc5ca2-4062-4ae7-b85e-f6b93e3c4a2b/evidence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60361 - "DELETE /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/movements/40dc5ca2-4062-4ae7-b85e-f6b93e3c4a2b/evidence HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60462 - "GET /api/v1/resources?limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60462 - "GET /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60462 - "POST /api/v1/resources/f34d0b7a-c100-46ca-8404-a9b2b0d7e42e/deliveries HTTP/1.1" 409 Conflict
+INFO:     127.0.0.1:60909 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60909 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60910 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60910 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60982 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60982 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60983 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60983 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51189 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:51217 - "GET /api/v1/resources?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51219 - "GET /api/v1/resources?limit=5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51247 - "GET /api/v1/estimates?limit=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58822 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51359 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51359 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54135 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54135 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49678 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49678 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64000 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64000 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61310 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61310 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64493 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64493 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57644 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57644 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50520 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50520 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59098 - "GET /api/v1/resources?limit=1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51665 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51665 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51669 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51669 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51727 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51727 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51728 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51728 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51782 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51782 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51782 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51782 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51782 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51782 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51785 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51785 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51785 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51785 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51814 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51814 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51817 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51817 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51932 - "GET /api/v1/resources HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56140 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56140 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49170 - "GET /api/v1/estimates?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49379 - "GET /api/v1/estimates?limit=20 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49700 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49700 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49701 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49701 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49701 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49701 - "GET /api/v1/funds?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49809 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49809 - "GET /api/v1/expenses?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49809 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49812 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49812 - "GET /api/v1/allocations HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49809 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49809 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49809 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\models\models.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [23972]
+INFO:     Started server process [1320]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52635 - "GET /api/v1/estimates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52639 - "POST /api/v1/schedule HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:52641 - "POST /api/v1/schedule HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:52645 - "POST /api/v1/schedule/milestones HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:52647 - "PATCH /api/v1/schedule/ HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:52649 - "GET /api/v1/schedule/summary HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52671 - "POST /api/v1/schedule HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:52707 - "GET /api/v1/estimates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52714 - "POST /api/v1/schedule HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52714 - "POST /api/v1/schedule HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52714 - "PATCH /api/v1/schedule/c539e977-ee12-47a9-ae2c-535f74cf4f2a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52714 - "PATCH /api/v1/schedule/c539e977-ee12-47a9-ae2c-535f74cf4f2a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52714 - "POST /api/v1/schedule/milestones HTTP/1.1" 201 Created
+INFO:     127.0.0.1:52714 - "PATCH /api/v1/schedule/milestones/966e42fb-468a-49f1-8ab9-a92d1ee208c8 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52714 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52714 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52714 - "GET /api/v1/schedule?status=in_progress HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61553 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61553 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58668 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58668 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59097 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59097 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54050 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54050 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58221 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58221 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51164 - "GET /api/v1/schedule/c539e977-ee12-47a9-ae2c-535f74cf4f2a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59171 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59171 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51164 - "GET /api/v1/schedule/c539e977-ee12-47a9-ae2c-535f74cf4f2a HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62502 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62502 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61909 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61909 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61912 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61912 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61912 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61912 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61912 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61912 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61934 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61934 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60056 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60055 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60056 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60055 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60055 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60055 - "GET /api/v1/estimates?skip=0&limit=200 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60057 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60055 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60057 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60055 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\core\config.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [1320]
+INFO:     Started server process [26604]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\api\v1\estimates.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26604]
+INFO:     Started server process [29628]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests\test_auth.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [29628]
+INFO:     Started server process [18288]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'alembic\versions\0005_auth.py'. Reloading...
+ INFO:     Shutting down
+INFO:     127.0.0.1:57900 - "GET /api/v1/health HTTP/1.1" 200 OK
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18288]
+INFO:     Started server process [30236]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:57909 - "GET /api/v1/estimates HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57909 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57909 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57909 - "GET /api/v1/estimates HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57909 - "GET /api/v1/funds HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57909 - "GET /api/v1/auth/me HTTP/1.1" 401 Unauthorized
+INFO:     127.0.0.1:57909 - "POST /api/v1/auth/login HTTP/1.1" 401 Unauthorized
+WARNING:  StatReload detected changes in 'app\repositories\user_repository.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [30236]
+INFO:     Started server process [28120]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:60681 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60689 - "POST /api/v1/auth/users HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:60695 - "POST /api/v1/auth/users HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:60715 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60721 - "POST /api/v1/auth/users HTTP/1.1" 201 Created
+INFO:     127.0.0.1:60727 - "POST /api/v1/auth/users HTTP/1.1" 201 Created
+INFO:     127.0.0.1:54043 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54043 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54043 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54043 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54043 - "OPTIONS /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57927 - "OPTIONS /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54043 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56734 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56734 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56734 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56734 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56734 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56734 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "OPTIONS /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60755 - "OPTIONS /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "OPTIONS /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60755 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60755 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "OPTIONS /api/v1/auth/projects/7e2c46a7-f49d-46b0-8d41-1c684c01da2f/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/projects/7e2c46a7-f49d-46b0-8d41-1c684c01da2f/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "OPTIONS /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52610 - "OPTIONS /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56051 - "OPTIONS /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65451 - "OPTIONS /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52610 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52610 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "OPTIONS /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52610 - "OPTIONS /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54950 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55337 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55345 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55360 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55366 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55412 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55420 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55426 - "PATCH /api/v1/auth/users/d2ba589a-62d8-462f-8f2a-4b28a1ed51b5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55432 - "PATCH /api/v1/auth/users/398f6910-238d-43df-be71-d4346a97d9d0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60842 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53738 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60842 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53738 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53738 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53738 - "OPTIONS /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60842 - "OPTIONS /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53738 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53738 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61143 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61143 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61143 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61143 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61143 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61143 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61143 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61143 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "OPTIONS /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "OPTIONS /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "OPTIONS /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "OPTIONS /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "OPTIONS /api/v1/auth/projects/7e2c46a7-f49d-46b0-8d41-1c684c01da2f/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/projects/7e2c46a7-f49d-46b0-8d41-1c684c01da2f/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "OPTIONS /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61182 - "OPTIONS /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64912 - "OPTIONS /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54181 - "OPTIONS /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64912 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64912 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "OPTIONS /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64912 - "OPTIONS /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57757 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59246 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64021 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64021 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59246 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59246 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59246 - "OPTIONS /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64021 - "OPTIONS /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64021 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64021 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49244 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "OPTIONS /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "OPTIONS /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "OPTIONS /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "OPTIONS /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/users HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/projects HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "OPTIONS /api/v1/auth/projects/7e2c46a7-f49d-46b0-8d41-1c684c01da2f/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/projects/7e2c46a7-f49d-46b0-8d41-1c684c01da2f/members HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "OPTIONS /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57902 - "OPTIONS /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56882 - "OPTIONS /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64778 - "OPTIONS /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57902 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57902 - "GET /api/v1/schedule/milestones HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "OPTIONS /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57902 - "OPTIONS /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/resources?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51947 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+WARNING:  StatReload detected changes in 'app\schemas\schemas.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28120]
+INFO:     Started server process [28172]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\assistant_service.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [28172]
+INFO:     Started server process [18020]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'app\services\assistant_service.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [18020]
+INFO:     Started server process [3312]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  StatReload detected changes in 'tests\test_assistant.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [3312]
+INFO:     Started server process [22280]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:52861 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52869 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52875 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52881 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52887 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52893 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52901 - "POST /api/v1/assistant/ask HTTP/1.1" 401 Unauthorized
+WARNING:  StatReload detected changes in 'tests\test_assistant.py'. Reloading...
+ INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [22280]
+INFO:     Started server process [3144]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:61815 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "OPTIONS /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "OPTIONS /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53530 - "OPTIONS /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61815 - "OPTIONS /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53530 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "POST /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/estimates?skip=0&limit=100 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "GET /api/v1/auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49999 - "POST /api/v1/assistant/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65450 - "OPTIONS /api/v1/auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65450 - "POST /api/v1/auth/login HTTP/1.1" 401 Unauthorized
