@@ -91,6 +91,14 @@ export const api = {
     return data;
   },
 
+  async resetPassword(payload: {
+    new_password: string;
+    confirm_password: string;
+  }): Promise<{ message: string }> {
+    const { data } = await client.post<{ message: string }>('/auth/reset-password', payload);
+    return data;
+  },
+
   async me(): Promise<MeResponse> {
     const { data } = await client.get<MeResponse>('/auth/me');
     return data;

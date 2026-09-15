@@ -5,6 +5,7 @@ from fastapi.responses import FileResponse
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
+from app.core.ratelimit import rate_limiter
 from app.models.models import User
 from app.schemas.schemas import (
     ResourceCreate,
@@ -23,6 +24,10 @@ from app.services.storage_service import path_suffix_mime
 from app.api.v1.dependencies import get_current_user, require_writer, require_admin
 
 router = APIRouter()
+
+EVIDENCE_UPLOAD_USER_LIMIT = 10
+EVIDENCE_UPLOAD_WINDOW_SECONDS = 60
+EVIDENCE_UPLOAD_RATE_LIMITED_MESSAGE = "Too many uploads. Please try again shortly."
 
 
 @router.get("", response_model=ResourceListResponse)
@@ -114,6 +119,12 @@ def upload_movement_evidence(
     db: Session = Depends(get_db),
     current_user: User = Depends(require_writer),
 ):
+    if not rate_limiter.allow(
+        f"evidence-upload:{current_user.username}",
+        EVIDENCE_UPLOAD_USER_LIMIT,
+        EVIDENCE_UPLOAD_WINDOW_SECONDS,
+    ):
+        raise HTTPException(status_code=429, detail=EVIDENCE_UPLOAD_RATE_LIMITED_MESSAGE)
     return resource_service.build_movement_response(
         db, resource_service.attach_movement_evidence(db, resource_id, movement_id, file)
     )

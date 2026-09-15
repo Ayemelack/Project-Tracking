@@ -402,6 +402,16 @@ export default function LoginPage() {
                     )}
                   </div>
 
+                  <div className="flex justify-end -mt-2">
+                    <button
+                      type="button"
+                      onClick={() => navigate('/reset-password')}
+                      className="text-sm font-semibold text-blue-800 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 rounded"
+                    >
+                      Forgot password?
+                    </button>
+                  </div>
+
                   {signInError && (
                     <div
                       className="rounded-lg bg-red-50 border border-red-200 px-4 py-3 text-sm text-red-700 flex items-start gap-2.5"
@@ -440,6 +450,17 @@ export default function LoginPage() {
                 <p className="text-xs text-slate-400 mt-6">
                   Authorized access only. All activity is logged.
                 </p>
+
+                <button
+                  type="button"
+                  onClick={() => navigate('/')}
+                  className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:border-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transition-colors group"
+                >
+                  <svg className="w-4 h-4 text-slate-400 group-hover:text-blue-800 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                  Back to Home
+                </button>
               </>
             )}
 
@@ -746,6 +767,17 @@ export default function LoginPage() {
                     Sign in
                   </button>
                 </p>
+
+                <button
+                  type="button"
+                  onClick={() => navigate('/')}
+                  className="mt-6 w-full inline-flex items-center justify-center gap-2 rounded-lg border border-slate-300 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 hover:border-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 transition-colors group"
+                >
+                  <svg className="w-4 h-4 text-slate-400 group-hover:text-blue-800 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                  </svg>
+                  Back to Home
+                </button>
               </>
             )}
 

@@ -64,9 +64,9 @@ class EstimateUpdate(BaseModel):
     contractor: Optional[str] = None
     client: Optional[str] = None
     currency: Optional[str] = None
-    status: Optional[str] = None
     notes: Optional[str] = None
-    total_estimated_amount: Optional[float] = None
+
+    model_config = {"extra": "forbid"}
 
 
 class EstimateResponse(EstimateBase):
@@ -1144,6 +1144,27 @@ class RegisterResponse(BaseModel):
 
 class AuthStatusResponse(BaseModel):
     has_users: bool
+
+
+class PasswordResetRequest(BaseModel):
+    new_password: str = Field(min_length=8, max_length=200)
+    confirm_password: str = Field(min_length=1, max_length=200)
+
+    # Reject unknown fields so a client can never attach extra data (for
+    # example a target user id) to a reset request.
+    model_config = {"extra": "forbid"}
+
+    @field_validator("confirm_password")
+    @classmethod
+    def _passwords_match(cls, v: str, info) -> str:
+        new_password = info.data.get("new_password")
+        if new_password and v != new_password:
+            raise ValueError("Passwords do not match.")
+        return v
+
+
+class PasswordResetResponse(BaseModel):
+    message: str
 
 
 class UserUpdateAdmin(BaseModel):

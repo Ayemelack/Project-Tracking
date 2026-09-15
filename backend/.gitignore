@@ -1,0 +1,16 @@
+# Dependencies
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Secrets / local configuration
+.env
+
+# Runtime logs
+*.log
+
+# User-uploaded documents (never committed)
+storage/uploads/*
+!storage/uploads/.gitkeep

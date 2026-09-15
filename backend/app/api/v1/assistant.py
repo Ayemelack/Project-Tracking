@@ -1,8 +1,9 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import StreamingResponse
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
+from app.core.ratelimit import rate_limiter
 from app.models.models import User
 from app.schemas.schemas import (
     AssistantAskRequest,
@@ -14,6 +15,17 @@ from app.services import assistant_provider, assistant_service
 from app.api.v1.dependencies import get_current_user
 
 router = APIRouter()
+
+ASSISTANT_USER_LIMIT = 20
+ASSISTANT_WINDOW_SECONDS = 60
+RATE_LIMITED_MESSAGE = "Too many requests. Please try again shortly."
+
+
+def _enforce_assistant_limit(username: str) -> None:
+    if not rate_limiter.allow(
+        f"assistant:{username}", ASSISTANT_USER_LIMIT, ASSISTANT_WINDOW_SECONDS
+    ):
+        raise HTTPException(status_code=429, detail=RATE_LIMITED_MESSAGE)
 
 
 def _sse(events):
@@ -38,6 +50,7 @@ def ask_assistant(
     passed through so authorization stays on the backend. The provider never
     receives or returns the API key.
     """
+    _enforce_assistant_limit(current_user.username)
     return assistant_provider.reply(db, current_user, data.question)
 
 
@@ -53,6 +66,7 @@ def ask_assistant_stream(
     Streams the provider's generated text where supported; never fakes
     streaming with artificial delays.
     """
+    _enforce_assistant_limit(current_user.username)
     return StreamingResponse(
         _sse(assistant_provider.stream_reply(db, current_user, data.question)),
         media_type="text/event-stream",

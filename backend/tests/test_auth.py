@@ -501,6 +501,121 @@ def test_invalid_register_credentials_not_revealed(raw_client):
 
 
 # ---------------------------------------------------------------------------
+# Forgot / Reset password (self-service, authenticated)
+# ---------------------------------------------------------------------------
+
+def test_reset_password_requires_auth(raw_client):
+    resp = raw_client.post(
+        "/api/v1/auth/reset-password",
+        json={"new_password": "brand-new-456", "confirm_password": "brand-new-456"},
+    )
+    assert resp.status_code == 401
+
+
+def _register_reset_user(raw_client, username="resetuser", password="initial123"):
+    resp = raw_client.post(
+        "/api/v1/auth/register",
+        json={
+            "username": username,
+            "full_name": "Reset User",
+            "password": password,
+            "confirm_password": password,
+        },
+    )
+    assert resp.status_code == 201, resp.text
+    return resp.json()
+
+
+def _login_token(raw_client, username, password):
+    login = raw_client.post(
+        "/api/v1/auth/login", json={"username": username, "password": password}
+    )
+    assert login.status_code == 200, login.text
+    return login.json()["access_token"]
+
+
+def test_reset_password_success_and_old_password_invalid(raw_client):
+    _register_reset_user(raw_client)
+    token = _login_token(raw_client, "resetuser", "initial123")
+    resp = raw_client.post(
+        "/api/v1/auth/reset-password",
+        json={"new_password": "brand-new-456", "confirm_password": "brand-new-456"},
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    assert resp.status_code == 200
+    assert resp.json()["message"] == "Password has been reset successfully."
+    # Old password no longer works.
+    old = raw_client.post(
+        "/api/v1/auth/login", json={"username": "resetuser", "password": "initial123"}
+    )
+    assert old.status_code == 401
+    # New password works.
+    new = raw_client.post(
+        "/api/v1/auth/login", json={"username": "resetuser", "password": "brand-new-456"}
+    )
+    assert new.status_code == 200
+
+
+def test_reset_password_mismatch_rejected(raw_client):
+    _register_reset_user(raw_client)
+    token = _login_token(raw_client, "resetuser", "initial123")
+    resp = raw_client.post(
+        "/api/v1/auth/reset-password",
+        json={"new_password": "brand-new-456", "confirm_password": "different-789"},
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    assert resp.status_code == 422
+
+
+def test_reset_password_short_password_rejected(raw_client):
+    _register_reset_user(raw_client)
+    token = _login_token(raw_client, "resetuser", "initial123")
+    resp = raw_client.post(
+        "/api/v1/auth/reset-password",
+        json={"new_password": "abc", "confirm_password": "abc"},
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    assert resp.status_code == 422
+
+
+def test_reset_password_cannot_change_other_user(raw_client):
+    # A reset only ever changes the password of the authenticated user. It
+    # must not be possible to change another user's password.
+    _register_reset_user(raw_client, "resetter", "initial123")
+    _register_reset_user(raw_client, "victim", "victimPass123")
+    token = _login_token(raw_client, "resetter", "initial123")
+    resp = raw_client.post(
+        "/api/v1/auth/reset-password",
+        json={"new_password": "attacker-new-456", "confirm_password": "attacker-new-456"},
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    assert resp.status_code == 200
+    # The victim's password is unchanged.
+    victim = raw_client.post(
+        "/api/v1/auth/login", json={"username": "victim", "password": "victimPass123"}
+    )
+    assert victim.status_code == 200
+    # The resetter can now sign in with their new password.
+    resetter = raw_client.post(
+        "/api/v1/auth/login", json={"username": "resetter", "password": "attacker-new-456"}
+    )
+    assert resetter.status_code == 200
+
+
+def test_reset_password_hash_never_returned(raw_client):
+    _register_reset_user(raw_client)
+    token = _login_token(raw_client, "resetuser", "initial123")
+    resp = raw_client.post(
+        "/api/v1/auth/reset-password",
+        json={"new_password": "brand-new-456", "confirm_password": "brand-new-456"},
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    assert resp.status_code == 200
+    assert "password_hash" not in resp.text
+    assert "brand-new-456" not in resp.text
+
+
+# ---------------------------------------------------------------------------
 # Security hardening: identifier policy, brute-force protection, headers
 # ---------------------------------------------------------------------------
 

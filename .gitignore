@@ -8,6 +8,11 @@ __pycache__/
 # Storage
 storage/uploads/*
 !storage/uploads/.gitkeep
+backend/storage/uploads/*
+!backend/storage/uploads/.gitkeep
+
+# Runtime logs
+*.log
 
 # IDE
 .vscode/

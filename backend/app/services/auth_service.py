@@ -106,6 +106,15 @@ def update_user(db: Session, user_id: UUID, fields: dict) -> User:
     return db_user
 
 
+def reset_password(db: Session, user: User, new_password: str) -> User:
+    db_user = user_repo.update(
+        db, user.id, {"password_hash": hash_password(new_password)}
+    )
+    if not db_user:
+        raise HTTPException(status_code=404, detail="User not found")
+    return db_user
+
+
 def create_project(db: Session, name: str, description: str | None = None) -> Project:
     if project_repo.get_by_name(db, name):
         raise HTTPException(

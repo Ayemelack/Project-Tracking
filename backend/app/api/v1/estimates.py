@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 from app.core.database import get_db
 from app.core.config import settings
 from app.core.logging import logger
+from app.core.ratelimit import rate_limiter
 from app.models.models import User
 from app.schemas.schemas import (
     EstimateResponse, EstimateDetailResponse, EstimateListResponse,
@@ -18,6 +19,10 @@ from app.api.v1.dependencies import get_current_user, require_writer, require_ad
 
 router = APIRouter()
 
+UPLOAD_USER_LIMIT = 10
+UPLOAD_WINDOW_SECONDS = 60
+UPLOAD_RATE_LIMITED_MESSAGE = "Too many uploads. Please try again shortly."
+
 
 @router.post("/upload", response_model=UploadResponse)
 async def upload_estimate(
@@ -25,6 +30,10 @@ async def upload_estimate(
     db: Session = Depends(get_db),
     current_user: User = Depends(require_writer),
 ):
+    if not rate_limiter.allow(
+        f"estimate-upload:{current_user.username}", UPLOAD_USER_LIMIT, UPLOAD_WINDOW_SECONDS
+    ):
+        raise HTTPException(status_code=429, detail=UPLOAD_RATE_LIMITED_MESSAGE)
     if not file.filename:
         raise HTTPException(status_code=400, detail="No filename provided")
 

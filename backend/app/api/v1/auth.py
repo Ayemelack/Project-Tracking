@@ -9,6 +9,8 @@ from app.models.models import User
 from app.schemas.schemas import (
     AuthStatusResponse,
     LoginRequest,
+    PasswordResetRequest,
+    PasswordResetResponse,
     RegisterResponse,
     TokenResponse,
     UserCreateAdmin,
@@ -37,6 +39,8 @@ REGISTER_IP_LIMIT = 10
 REGISTER_IP_WINDOW_SECONDS = 3600
 ADMIN_KEY_IP_LIMIT = 5
 ADMIN_KEY_IP_WINDOW_SECONDS = 900
+RESET_PASSWORD_IP_LIMIT = 10
+RESET_PASSWORD_IP_WINDOW_SECONDS = 900
 
 RATE_LIMITED_MESSAGE = "Too many attempts. Please try again later."
 REGISTER_RATE_LIMITED_MESSAGE = "Too many accounts created from this location. Please try again later."
@@ -100,6 +104,27 @@ def login(data: LoginRequest, request: Request, db: Session = Depends(get_db)):
 @router.get("/me", response_model=MeResponse)
 def me(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)):
     return auth_service.member_of(db, current_user)
+
+
+@router.post("/reset-password", response_model=PasswordResetResponse)
+def reset_password(
+    data: PasswordResetRequest,
+    request: Request,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    # The password is reset for the authenticated user only. The target user is
+    # derived from the session token, never from a client-supplied identifier,
+    # so one user cannot change another user's password.
+    client_ip = _client_ip(request)
+    if not rate_limiter.allow(
+        f"reset-password-ip:{client_ip}",
+        RESET_PASSWORD_IP_LIMIT,
+        RESET_PASSWORD_IP_WINDOW_SECONDS,
+    ):
+        raise HTTPException(status_code=429, detail=RATE_LIMITED_MESSAGE)
+    auth_service.reset_password(db, current_user, data.new_password)
+    return PasswordResetResponse(message="Password has been reset successfully.")
 
 
 # ---------------------------------------------------------------------------

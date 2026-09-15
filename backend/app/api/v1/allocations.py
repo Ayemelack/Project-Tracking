@@ -5,6 +5,7 @@ from fastapi.responses import FileResponse
 from sqlalchemy.orm import Session
 
 from app.core.database import get_db
+from app.core.ratelimit import rate_limiter
 from app.models.models import User
 from app.schemas.schemas import UpdateAllocationStatus, FundAllocationResponse, AllocationExpenseListResponse
 from app.repositories.fund_repository import fund_allocation_repo
@@ -13,6 +14,10 @@ from app.services.storage_service import path_suffix_mime
 from app.api.v1.dependencies import get_current_user, require_writer, require_admin
 
 router = APIRouter()
+
+EVIDENCE_UPLOAD_USER_LIMIT = 10
+EVIDENCE_UPLOAD_WINDOW_SECONDS = 60
+EVIDENCE_UPLOAD_RATE_LIMITED_MESSAGE = "Too many uploads. Please try again shortly."
 
 
 def _allocation_or_404(db: Session, allocation_id: UUID):
@@ -79,6 +84,12 @@ def upload_allocation_evidence(
     db: Session = Depends(get_db),
     current_user: User = Depends(require_writer),
 ):
+    if not rate_limiter.allow(
+        f"evidence-upload:{current_user.username}",
+        EVIDENCE_UPLOAD_USER_LIMIT,
+        EVIDENCE_UPLOAD_WINDOW_SECONDS,
+    ):
+        raise HTTPException(status_code=429, detail=EVIDENCE_UPLOAD_RATE_LIMITED_MESSAGE)
     return fund_service.attach_allocation_evidence(db, allocation_id, file)
 
 
