@@ -1,9 +1,15 @@
+import logging
+from urllib.parse import urlparse
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy.engine.url import make_url
 from app.core.config import settings
 from app.core.database import engine, Base, SessionLocal
 from app.api.v1.router import router as api_router
 from app.services.auth_service import bootstrap_default
+
+logger = logging.getLogger(__name__)
 
 app = FastAPI(
     title="Project Tracking API",
@@ -39,6 +45,13 @@ async def security_headers(request, call_next):
 
 @app.on_event("startup")
 def on_startup():
+    db_url = make_url(settings.DATABASE_URL)
+    logger.warning(
+        "Connecting to database: host=%s port=%s db=%s",
+        db_url.host,
+        db_url.port,
+        db_url.database,
+    )
     Base.metadata.create_all(bind=engine)
     with SessionLocal() as db:
         bootstrap_default(db)
